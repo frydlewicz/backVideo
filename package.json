@@ -1,0 +1,21 @@
+{
+    "name": "backvideo",
+    "version": "0.0.1",
+    "description": "Play a movie in the background of your webside",
+    "main": "backVideo.ts",
+    "scripts": {
+        "build": "tsc",
+        "check": "tslint -c tslint.json -p ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/frydlewicz/backVideo.git"
+    },
+    "author": "Kamil Frydlewicz",
+    "license": "MIT",
+    "homepage": "https://github.com/frydlewicz/backVideo#readme",
+    "devDependencies": {
+        "tslint": "^6.0.0",
+        "typescript": "^3.8.3"
+    }
+}
