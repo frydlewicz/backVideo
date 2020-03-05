@@ -9,6 +9,8 @@ function createBackVideo(videoSrc: string, imageSrc: string, originWidth: number
 
     if (imageSrc) {
         image = document.createElement('img');
+        image.style.position = 'absolute';
+        image.style.zIndex = '2';
         image.onload = (): void => {
             if (typeof onLoadImage === 'function') {
                 onLoadImage();
@@ -23,6 +25,8 @@ function createBackVideo(videoSrc: string, imageSrc: string, originWidth: number
     video.autoplay = true;
     video.controls = false;
     video.preload = 'none';
+    video.style.position = 'absolute';
+    video.style.zIndex = '1';
     video.onloadeddata = (): void => {
         if (imageSrc) {
             image.style.display = 'none';
@@ -38,6 +42,10 @@ function createBackVideo(videoSrc: string, imageSrc: string, originWidth: number
     addEventListener('resize', (): void => setSizeAndPosition());
 
     container.id = 'backVideo';
+    container.style.position = 'fixed';
+    container.style.left = container.style.top = '0';
+    container.style.width = container.style.height = '100%';
+    container.style.overflow = 'hidden';
     document.body.appendChild(container);
 
     function setSizeAndPosition(): void {
