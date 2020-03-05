@@ -4,7 +4,7 @@
     "description": "Play a movie in the background of your webside",
     "main": "backVideo.ts",
     "scripts": {
-        "build": "tsc",
+        "build": "tsc && uglifyjs -o backVideo.min.js -c -m -- backVideo.js",
         "check": "tslint -c tslint.json --fix -p ."
     },
     "repository": {
@@ -16,6 +16,7 @@
     "homepage": "https://github.com/frydlewicz/backVideo#readme",
     "devDependencies": {
         "tslint": "^6.0.0",
-        "typescript": "^3.8.3"
+        "typescript": "^3.8.3",
+        "uglify-js": "^3.8.0"
     }
 }
