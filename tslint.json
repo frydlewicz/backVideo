@@ -3,12 +3,15 @@
     "extends": [
         "tslint:recommended"
     ],
-    "jsRules": {},
     "rules": {
         "quotemark": [
             true,
             "single",
             "jsx-double"
+        ],
+        "no-empty": [
+            true,
+            "allow-empty-catch"
         ],
         "space-before-function-paren": false,
         "triple-equals": false,
