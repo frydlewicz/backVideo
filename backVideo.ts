@@ -46,7 +46,10 @@ function createBackVideo(videoSrc: string, imageSrc: string, originWidth: number
     container.style.left = container.style.top = '0';
     container.style.width = container.style.height = '100%';
     container.style.overflow = 'hidden';
-    document.body.appendChild(container);
+
+    const first: ChildNode = document.body.firstChild;
+
+    first.parentNode.insertBefore(container, first);
 
     function setSizeAndPosition(): void {
         const windowWidth: number = window.innerWidth;
