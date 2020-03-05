@@ -5,7 +5,7 @@
     "main": "backVideo.ts",
     "scripts": {
         "build": "tsc",
-        "check": "tslint -c tslint.json -p ."
+        "check": "tslint -c tslint.json --fix -p ."
     },
     "repository": {
         "type": "git",
