@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta name="author" content="Kamil Frydlewicz">
+    <meta name="description" content="Play a movie in the background of your webside. Plugin written in TypeScript.">
+    <meta name="keywords"
+        content="backVideo, background video, play movie, background, video, webside, movie, TypeScript, Kamil Frydlewicz">
+    <title>backVideo | example</title>
+    <link rel="icon" href="favicon.ico">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: white;
+            font-family: Arial;
+        }
+
+        a {
+            color: white;
+        }
+
+        nav {
+            width: 100%;
+            overflow: auto;
+            padding: 10px;
+            border-top: 5px solid #3b84a9;
+            color: #3b84a9;
+        }
+
+        nav img {
+            height: 32px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        header {
+            position: fixed;
+            top: 50%;
+            left: calc(50% - 140px);
+            width: 280px;
+            padding: 25px 0;
+            border: 5px solid white;
+            box-shadow: 0 0 100px 0 white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: normal;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            proof of concept
+        </div>
+        <div class="right">
+            <a target="_blank" href="https://github.com/frydlewicz/backVideo" rel="nofollow">
+                <img src="github.svg" alt="code">
+            </a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>backVideo</h1>
+        <p>example webside</p>
+    </header>
+
+    <footer>
+        <span>©&nbsp;Copyright <a target="_blank" href="https://frydlewicz.pl">Kamil&nbsp;Frydlewicz</a> 2020</span>
+    </footer>
+
+
+    <script src="https://cdn.kon.ovh/app/backVideo/backVideo.min.js"></script>
+
+    <script>
+        (function () {
+            function onLoadImage() {
+                console.log('Image has been loaded.');
+            }
+
+            function onLoadVideo() {
+                console.log('Video has been loaded.');
+            }
+
+            createBackVideo('video.mp4', 'image.jpg', 1920, 1080, onLoadImage, onLoadVideo);
+        })();
+    </script>
+</body>
+
+</html>
