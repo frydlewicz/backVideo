@@ -1,11 +1,16 @@
-function createBackVideo(videoSrc: string, imageSrc: string, originWidth: number, originHeight: number, onLoadImage: () => {}, onLoadVideo: () => {}): void {
+function createBackVideo(
+    videoSrc: string, imageSrc: string,
+    originWidth: number, originHeight: number,
+    onLoadImage: () => {}, onLoadVideo: () => {}): void {
+    console.log('backVideo: powered by www.frydlewicz.pl');
+
     if (!videoSrc || !originWidth || !originHeight) {
         throw new Error('createBackVideo: incorrect parameters!');
     }
 
     const container: HTMLDivElement = document.createElement('div');
     let image: HTMLImageElement;
-    const video: HTMLVideoElement = document.createElement('video')
+    const video: HTMLVideoElement = document.createElement('video');
 
     if (imageSrc) {
         image = document.createElement('img');
@@ -43,6 +48,7 @@ function createBackVideo(videoSrc: string, imageSrc: string, originWidth: number
 
     container.id = 'backVideo';
     container.style.position = 'fixed';
+    container.style.zIndex = '-1';
     container.style.left = container.style.top = '0';
     container.style.width = container.style.height = '100%';
     container.style.overflow = 'hidden';
