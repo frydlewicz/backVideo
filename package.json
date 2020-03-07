@@ -4,7 +4,7 @@
     "description": "Play a movie in the background of your webside",
     "main": "backVideo.ts",
     "scripts": {
-        "build": "tsc && uglifyjs -o backVideo.min.js -c -m -- backVideo.js",
+        "build": "tsc && uglifyjs -o backVideo.min.js -c -m -- backVideo.js && gzip backVideo.min.js",
         "check": "tslint -c tslint.json --fix -p ."
     },
     "repository": {
@@ -15,6 +15,7 @@
     "license": "MIT",
     "homepage": "https://github.com/frydlewicz/backVideo#readme",
     "devDependencies": {
+        "gzip-cli": "^1.1.0",
         "tslint": "^6.0.0",
         "typescript": "^3.8.3",
         "uglify-es": "^3.3.9"
