@@ -5,7 +5,7 @@
 
 Play a movie in the background of your webside. Plugin written in TypeScript. No extra libraries required.
 
-![backVideo screenshot](https://frydlewicz.pl/app/backVideo/backVideo.jpg)
+![backVideo screenshot](https://frydlewicz.pl/app/backVideo/backVideo.jpg?github)
 
 ## Installation
 ```html
