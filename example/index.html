@@ -65,6 +65,20 @@
             font-weight: normal;
         }
 
+        pre {
+            width: 675px;
+            margin: 0 auto;
+            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.5);
+            color: black;
+        }
+
+        @media (max-width: 767px) {
+            pre {
+                display: none;
+            }
+        }
+
         footer {
             position: fixed;
             bottom: 10px;
@@ -91,10 +105,15 @@
         <p>example webside</p>
     </header>
 
+    <pre>
+    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">script</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"https://cdn.kon.ovh/app/backVideo/backVideo.min.js"</span><span style="color:#a65700; ">></span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">script</span><span style="color:#a65700; ">></span>
+    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold;">script</span><span style="color:#a65700; ">></span>
+    createBackVideo<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">video.mp4</span><span style="color:#800000; ">"</span><span style="color:#808030; ">,</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">image.jpg</span><span style="color:#800000; ">"</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">1920</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">1080</span><span style="color:#808030; ">,</span> onLoadImage<span style="color:#808030; ">,</span> onLoadVideo<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+    <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">script</span><span style="color:#a65700; ">></span></pre>
+
     <footer>
         <span>©&nbsp;Copyright <a target="_blank" href="https://frydlewicz.pl">Kamil&nbsp;Frydlewicz</a> 2020</span>
     </footer>
-
 
     <script src="https://cdn.kon.ovh/app/backVideo/backVideo.min.js"></script>
 
