@@ -13,7 +13,7 @@
     },
     "author": "Kamil Frydlewicz",
     "license": "MIT",
-    "homepage": "https://github.com/frydlewicz/backVideo#readme",
+    "homepage": "https://frydlewicz.pl/app/backVideo/example",
     "devDependencies": {
         "gzip-cli": "^1.1.0",
         "tslint": "^6.0.0",
