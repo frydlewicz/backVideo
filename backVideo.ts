@@ -40,7 +40,9 @@ function createBackVideo(
             onLoadVideo();
         }
     };
-    video.src = videoSrc;
+    setTimeout((): void => {
+        video.src = videoSrc;
+    }, 1);
     container.appendChild(video);
 
     setSizeAndPosition();
