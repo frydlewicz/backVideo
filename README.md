@@ -16,7 +16,7 @@ Play a movie in the background of your webside. Plugin written in TypeScript. No
 ```
 
 ## Example
-* [sample webside](https://frydlewicz.pl/app/backVideo/example)
+[sample webside](https://frydlewicz.pl/app/backVideo/example)
 
 ## Author
 [Kamil Frydlewicz](https://frydlewicz.pl)
