@@ -1,7 +1,7 @@
 (window as any).createBackVideo = (
     videoSrc: string, imageSrc: string,
     originWidth: number, originHeight: number,
-    onLoadImage: () => {}, onLoadVideo: () => {}): void => {
+    onLoadImage?: () => void, onLoadVideo?: () => void): void => {
     console.log('backVideo: powered by www.frydlewicz.pl');
 
     if (!videoSrc || !originWidth || !originHeight) {
@@ -49,6 +49,7 @@
 
     container.id = 'backVideo';
     container.style.position = 'fixed';
+    container.style.left = container.style.top = '0';
     container.style.zIndex = '-1';
     container.style.width = container.style.height = '100%';
     container.style.overflow = 'hidden';
